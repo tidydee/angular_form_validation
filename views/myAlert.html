@@ -1,0 +1,6 @@
+<form name="myForm">
+    Enter something: <input name="alertBox" type="text" placeholder="Enter something" ng-model="alertInput" ng-required="!alertInput" ng-minlength="3">
+    <span ng-show="myForm.alertBox.$error.minlength">Minimum 3 characters required!</span>
+
+    <button ng-click="alert(alertInput)" ng-disabled="myForm.$invalid">Send Alert</button>
+</form>

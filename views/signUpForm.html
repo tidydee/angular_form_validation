@@ -1,0 +1,5 @@
+<label>Name:</label> <input type="text" name="name" placeholder="Enter name"><br>
+<label>Password:</label> <input type="text" placeholder="Enter password" ng-model="value1" equals="{{value2}}"><br>
+<label>Password verify:</label> <input type="text" placeholder="Verify password" ng-model="value2" equals="{{value1}}">
+<input type="submit" ng-disabled="authenticate(value1, value2)" ng-click="alert()">
+

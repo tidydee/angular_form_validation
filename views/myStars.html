@@ -1,0 +1,8 @@
+﻿<ul class="rating">
+    <li ng-click="toggle($index)" ng-repeat=" star in stars ">
+        <span ng-switch on="star.filled">
+            <div ng-switch-when="true" class="filled">&#9733;</div>
+            <div ng-switch-default class="rating">&#9733;</div>
+        </span>
+    </li>
+</ul>
